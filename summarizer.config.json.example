@@ -1,0 +1,32 @@
+{
+  "llm": {
+    "base_url": "http://localhost:8000/v1",
+    "model": "Qwen3-4B-Instruct",
+    "max_output_tokens": 900,
+    "temperature": 0.2,
+    "timeouts": {
+      "total_s": 180
+    }
+  },
+  "exclusions": {
+    "dir_names": [
+      ".git",
+      ".summary",
+      "node_modules"
+    ],
+    "file_globs": ["*.png", "*.pdf"],
+    "max_file_bytes_default": 1048576,
+    "head_tail_bytes": 20000
+  },
+  "chunking_strategy": {
+    "max_chunk_chars": 24000,
+    "max_chunks_per_file": 24,
+    "overlap_chars": 400,
+    "aggregation": {
+      "reduce_prompt": "Собери итоговую микро-суммаризацию файла из набора частичных суммаризаций чанков."
+    }
+  },
+  "prompting": {
+    "system": "Ты помощник, который делает краткие технические микро-суммаризации файлов проекта."
+  }
+}
