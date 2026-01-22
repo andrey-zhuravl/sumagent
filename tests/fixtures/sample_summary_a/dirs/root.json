@@ -1,0 +1,10 @@
+{
+  "schema": "DirSummary.v1",
+  "relative_path": ".",
+  "dir_hash_sha256": "hash-root",
+  "purpose": "Root dir",
+  "contents_overview": "Contains src and config",
+  "key_components": ["src", "config"],
+  "entrypoints": [],
+  "generated_at": "2024-01-01T00:00:00Z"
+}

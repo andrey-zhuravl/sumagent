@@ -1,0 +1,10 @@
+{
+  "schema": "DirSummary.v1",
+  "relative_path": "config",
+  "dir_hash_sha256": "hash-config",
+  "purpose": "Configuration",
+  "contents_overview": "Deployment configs",
+  "key_components": ["docker.yaml"],
+  "entrypoints": [],
+  "generated_at": "2024-01-01T00:00:00Z"
+}

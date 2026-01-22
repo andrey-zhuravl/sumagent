@@ -1,0 +1,13 @@
+{
+  "ignore_paths": [".summary", "node_modules"],
+  "label_paths": {
+    "src": ["core"],
+    "config": ["config"]
+  },
+  "llm": {
+    "base_url": "http://localhost:8000/v1",
+    "model": "Qwen3-4B-Instruct"
+  },
+  "max_items_per_llm_batch": 80,
+  "max_chars_per_llm_batch": 24000
+}

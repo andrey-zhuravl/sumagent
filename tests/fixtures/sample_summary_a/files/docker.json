@@ -1,0 +1,17 @@
+{
+  "schema": "FileSummary.v1",
+  "relative_path": "config/docker.yaml",
+  "file_hash_sha256": "hash-docker",
+  "size_bytes": 200,
+  "language": "yaml",
+  "purpose": "Docker compose configuration",
+  "key_entities": [],
+  "public_entrypoints": [],
+  "external_dependencies": [],
+  "configs_env": ["DOCKER_IMAGE"],
+  "errors_and_exceptions": [],
+  "todo_fixme": [],
+  "risks": [],
+  "evidence": [],
+  "generated_at": "2024-01-01T00:00:00Z"
+}

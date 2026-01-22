@@ -1,0 +1,17 @@
+{
+  "schema": "FileSummary.v1",
+  "relative_path": "src/service.py",
+  "file_hash_sha256": "hash-service",
+  "size_bytes": 456,
+  "language": "python",
+  "purpose": "Core domain service for order workflow",
+  "key_entities": ["OrderService", "OrderWorkflow"],
+  "public_entrypoints": [{"name": "run_order"}],
+  "external_dependencies": [],
+  "configs_env": [],
+  "errors_and_exceptions": ["OrderError"],
+  "todo_fixme": [],
+  "risks": [],
+  "evidence": [],
+  "generated_at": "2024-01-01T00:00:00Z"
+}
