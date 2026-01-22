@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass
 from fnmatch import fnmatch
 from pathlib import Path
@@ -34,7 +35,7 @@ def scan_repo(
     files: list[FileInfo] = []
     dirs: list[DirInfo] = []
 
-    for current_root, dirnames, filenames in repo_root.walk():
+    for current_root, dirnames, filenames in os.walk(repo_root):
         rel_dir = Path(current_root).relative_to(repo_root)
         rel_dir_str = "." if rel_dir == Path(".") else rel_dir.as_posix()
 
