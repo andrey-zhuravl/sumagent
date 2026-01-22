@@ -55,3 +55,35 @@ python -m sumagent_a summarize --repo /path/to/repo --config summarizer.config.j
 ```
 
 Имя summary-файла детерминировано: `sha256(relative_path).json`.
+
+## Sumagent Stage B
+
+Stage B строит иерархию модулей и аспектные витрины на основе Stage A summaries.
+
+### Запуск
+
+```bash
+python -m sumagent_b build --repo /path/to/repo --summary-dir .summary
+```
+
+Пересчитать одну витрину:
+
+```bash
+python -m sumagent_b build-view --repo /path/to/repo --summary-dir .summary --aspect security_auth
+```
+
+Пересчитать один модуль (по root_path):
+
+```bash
+python -m sumagent_b build-module --repo /path/to/repo --summary-dir .summary --module-root src
+```
+
+### Конфигурация
+
+Опционально можно передать `summary_b.config.json`:
+
+```bash
+python -m sumagent_b build --repo /path/to/repo --summary-dir .summary --config summary_b.config.json
+```
+
+Пример находится в `summary_b.config.json.example`.

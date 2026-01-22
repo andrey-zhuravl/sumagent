@@ -1,0 +1,10 @@
+{
+  "schema": "DirSummary.v1",
+  "relative_path": "src",
+  "dir_hash_sha256": "hash-src",
+  "purpose": "Source code",
+  "contents_overview": "Auth and service",
+  "key_components": ["auth.py", "service.py"],
+  "entrypoints": ["auth.py"],
+  "generated_at": "2024-01-01T00:00:00Z"
+}
